@@ -1,9 +1,8 @@
-﻿Console.WriteLine("Hello, World!");
-const string nombreComercio = "MAXIKIOSCO PIOLON";
+﻿const string nombreComercio = "MAXIKIOSCO 67";
 
 Console.WriteLine($"=== {nombreComercio} ===");
 
-Console.Write("Nombre del cajero: Pichi ");
+Console.Write("Nombre del cajero: ");
 string nombreCajero = Console.ReadLine();
 
-Console.WriteLine($"Bienvenida, {nombreCajero}. Caja abierta.");
+Console.WriteLine($"Bienvenid@, {nombreCajero}. Caja abierta.");
