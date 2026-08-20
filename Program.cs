@@ -14,3 +14,4 @@ Console.Write("Precio del producto: ");
 decimal precioProducto = Convert.ToDecimal(Console.ReadLine());
 
 Console.WriteLine($"Se cargó el producto {nombreProducto} con un precio de ${precioProducto}");
+
