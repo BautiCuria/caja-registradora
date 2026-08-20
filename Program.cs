@@ -43,4 +43,21 @@ do
             break;
     }
 } while (opcion != "2");
-Console.WriteLine($"Venta Cerrada. Se cargaron {cantidadProductos} productos. Total a cobrar: ${totalventa}");
+const decimal descuentoMayor = 0.10m;
+const decimal descuentoMenor = 0.05m;
+
+decimal montoDescuento = 0;
+
+if (totalventa > 50000)
+{
+    montoDescuento = totalventa * descuentoMayor;
+} else if (totalventa > 20000)
+  {
+    montoDescuento = totalventa * descuentoMenor;
+  }
+decimal totalConDescuento = totalventa - montoDescuento;
+Console.WriteLine("\n=== TICKET FINAL ===");
+Console.WriteLine($"Cantidad de Productos: {cantidadProductos}");
+Console.WriteLine($"Subtotal: ${totalventa}");
+Console.WriteLine($"Descuento aplicado: ${montoDescuento}");
+Console.WriteLine($"TOTAL A COBRAR: ${totalConDescuento}");
